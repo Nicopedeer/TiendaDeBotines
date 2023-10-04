@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio de administradores</title>
+    <link rel="shortcut icon" href="imagenes/botinIcono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header> 
+        <h1>El Potrero Botines</h1>
+    </header>
+
+    <nav>
+		<ul class="nav-links">
+			<li>
+			 	<a href="index.html">Inicio</a>
+			</li>
+			<li>
+			 	<a href="novedades.html">Novedades</a>
+			</li>
+			<li>
+			 	<a href="contacto.html">Contacto</a>
+			</li>
+			<li>
+			 	<a href="talles.html">Tabla de Talles</a>
+			</li>
+			<li>
+				<a href="sitioadmin.html">Sitio Administradores</a>
+			</li>
+		</ul>
+		<div class="burger">
+			<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+            
+		</div>
+    </nav>
+        <h2 class="titleadmin"> Registro de Compras</h2>
+    <div class="contenedorAdmin">   
+        <form id="formTabla">
+            <label for="Cliente">Cliente</label>
+            <input type="text" name="Cliente" placeholder="Valentin">
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" placeholder="500,00">
+            <label for="nro_compra">Numero de compra</label>
+            <input type="number" name="nro_compra" placeholder="1547">
+            <p><input type="button" id="BtnPost" value="Enviar Datos"></p>
+            <p><input type="button" id="BtnPostx3" value="Enviar 3 veces"></p>
+            <label for="filtros">Selecione un filtro</label>
+            <p><select name="filtros" id="filtros">
+                <option value="Mayor500"> Precio mayor a 500</option>
+                <option value="Menor500">Precio menor a 500</option>
+            </select></p>
+            <p><input type="button" id="enviarSelect" value="Aplicar filtro"></p>
+        </form>
+        <table class="tablastock">
+            <thead>
+                <tr>
+                    <td>Cliente</td>
+                    <td>Precio</td>
+                    <td>Nro de compra</td>
+                </tr>
+            </thead>
+            <tbody id="tablainicio"></tbody>
+            <tfoot>
+                <tr>
+                    <td class="invisible"></td>
+                    <td class="invisible">
+                        <button class="btnPaginacion" id="anterior">Anterior</button>
+                        <button class="btnPaginacion" id="siguiente">Siguiente</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script type="text/javascript" src="js/table_api.js"></script>
+</body>
+</html>

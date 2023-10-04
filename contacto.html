@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botines El Potrero // Contacto</title>
+    <link rel="shortcut icon" href="imagenes\botinIcono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header> 
+        <h1>El Potrero Botines</h1>
+    </header>
+
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="novedades.html">Novedades</a>
+                </li>
+                 <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                 <li>
+                    <a href="talles.html">Tabla de Talles</a>
+                </li>
+                <li>
+                    <a href="sitioadmin.html">Sitio Administradores</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+    </nav>
+    <div class="containerContacto">
+        <article class="presentacion">
+            <h2 class="contactotitle">¿Quiénes somos?</h2>
+            <ul>
+                <li>Somos 2 amigos que comenzaron este emprendimiento por gusto al fútbol</li>
+                <li>No contamos con local, nuestro servicio es completamente online.</li>
+                <li>Nuestros productos son de primera calidad.</li>
+                <li>Estamos en el rubro hace 3 años y contamos con numerosas ventas exitosas</li>
+                <li>Priorizamos la comodidad del cliente con nuestros productos</li>
+            </ul>
+        </article>
+        <div class="formulario">
+            <h2 class="contactotitle">Formulario de contacto</h2>
+            <p class="parrafoForm">En este momento no contamos con stock, por favor ingrese sus datos y nos pondremos en contacto en brevedad</p>
+            
+            <form id="form">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" required />
+                </div>
+                <div>
+                    <label for="email"> Email:</label>
+                    <input type="text" name="email" placeholder="Ingrese su email" required/>
+                </div>
+                <div>
+                    <textarea name="comentario" rows="8" cols="25" placeholder="Ingrese su inquietud"></textarea>                        
+                </div>
+                <div class="formCaptcha">
+                    <span id="captcha">captcha text</span>
+                    <input id="cajaTexto" type="text" name="text">
+                    <div>
+                        <button id="botonEnviar" type="submit">Enviar</button>
+                        <button id="botonActualizar" type="button">Actualizar</button>
+                    </div>
+                        <span id="output"></span>
+                    </div>
+                 </div>
+            </form>
+        </div>
+    </div>
+    <script src="js\captcha.js"></script>
+ </body>
